@@ -111,7 +111,7 @@ inquirer
     console.log(response);
     const README = generateMarkdown(response);
 
-    fs.writeFile("README.md", README, (err) => {
+    fs.writeFile("./sample/README.md", README, (err) => {
       err ? console.error(err) : console.log("Success");
     });
   });
